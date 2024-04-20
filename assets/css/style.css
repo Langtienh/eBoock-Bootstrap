@@ -1,0 +1,214 @@
+body {
+    font-family: "Unbounded", sans-serif;
+}
+
+:root {
+    --custom-color: #F4A261;
+    --navbar-height: 88px
+}
+
+.bg-custom {
+    background-color: var(--custom-color);
+}
+
+.navbar-dark {
+    --bs-navbar-color: rgba(255, 255, 255, 1);
+    --bs-navbar-hover-color: rgba(253, 126, 20, 1);
+    --bs-navbar-active-color: var(--bs-orange);
+    --bs-navbar-toggler-border-color: rgba(255, 255, 255, 1);
+}
+
+.navbar-bg {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* height navbar = brand-font-size * 1.5 + padding-y */
+.navbar-brand {
+    --bs-navbar-brand-color: #fff;
+    --bs-navbar-brand-hover-color: #fff;
+    --bs-navbar-brand-font-size: 40px;
+    /* Không cần xét height */
+    /* --bs-navbar-brand-padding-y: calc(((var(--navbar-height) - var(--bs-navbar-brand-font-size) * 1.5) - 16px ) / 2); */
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.dropdown-menu {
+    --bs-dropdown-link-hover-color: var(--bs-orange);
+    --bs-dropdown-link-active-color: var(--bs-orange);
+}
+
+.nav-item {
+    --bs-navbar-nav-link-padding-x: 1.5rem;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+img {
+    object-fit: cover;
+}
+
+.navbar-brand__img {
+    width: 55px;
+    height: 55px;
+}
+
+section {
+    padding-block: 100px;
+}
+
+#welcome {
+    background-image: url(../images/welcome-bg.jpg);
+    background-size: cover;
+    height: calc(100vh - 160px);
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.unoverlay {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 2  ;
+    width: 100%;
+    height: 100%;
+}
+
+.welcome__caption {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    left: 12px;
+    max-width: calc(100% - 24px);
+    transform: translatey(-50%);
+    z-index: 1;
+}
+
+.welcome__hero {
+    width: 546px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateY(50%);
+    padding: 40px;
+}
+
+.section--padding-50 {
+    padding-block: 50px;
+}
+
+.member {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    padding: 4px;
+    background-color: #fff;
+}
+
+.member + .member {
+    margin-left: -16px;
+}
+
+#about {
+    padding-top: 200px;
+}
+
+.custom-block {
+    background-image: url(../images/welcome-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: var(--border-radius-medium);
+    position: relative;
+    overflow: hidden;
+}
+
+.custom-block::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    pointer-events: none;
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+.peple {
+    background-color: rgba(231, 111, 81, 0.85);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 45px;
+    margin-inline: auto;
+    border-radius: 0 0 24px 24px;
+    margin-bottom: 40px;
+}
+
+#contact{
+    background: var(--custom-color);
+    position: relative;
+    overflow: hidden;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 450px 450px 0 0;
+    border-color: #fff transparent transparent;
+    pointer-events: none;
+}
+
+
+/* reponsive */
+/* --bs-breakpoint-xs: 0;
+--bs-breakpoint-sm: 576px;
+--bs-breakpoint-md: 768px;
+--bs-breakpoint-lg: 992px;
+--bs-breakpoint-xl: 1200px;
+--bs-breakpoint-xxl: 1400px */
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .sm-hiden {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px)  {
+    .md-hiden {
+        display: none;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1999px)  {
+    .lg-hiden {
+        display: none;
+    }
+}
+
+@media (min-width: 1200px)  and (max-width: 1439px) {
+    .xl-hiden {
+        display: none;
+    }
+}
+
+@media (min-width: 1440px) {
+    .xxl-hiden {
+        display: none;
+    }
+}

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/images/education-icon.png">
+    <title>eBook | Bootstrap</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-bg">
+        <div class="container">
+            <a class="navbar-brand" href="#Welcome">
+                <img class="navbar-brand__img" src="assets/images/education-icon.png" alt="logo"> eBook</a>
+            <a href="#" class="btn btn-outline-warning rounded-4 lg-hiden ms-auto mx-3">Download</a>
+            <button class="navbar-toggler d-lg-none" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#welcome">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#thebook">the book</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#author">author</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reviews">reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">contact</a>
+                    </li>
+                    <a href="#" class="btn btn-outline-warning rounded-4">Download</a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main data-bs-spy="scroll" data-bs-target="#collapsibleNavId">
+        <section id="welcome">
+            <div class="overlay"></div>
+            <div class="unoverlay">
+                <div class="text-white container">
+                    <div class="row">
+                        <div class="welcome__caption text-white col-12 col-lg-6">
+                            <h5 class="text-warning">Introducing ebook</h5>
+                            <h1 class="fw-bolder mb-4">ebook landing page for professionals</h1>
+                            <a href="#" class="btn btn-warning text-white rounded-5">Discove More</a>
+                            <a href="#" class="btn btn-outline-warning rounded-5">Meet the Author</a>
+                        </div>
+                    </div>
+                    <img class="welcome__hero d-none d-lg-block" src="assets/images/education-online-books.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="section--padding-50 bg-custom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-7 d-flex align-items-center">
+                        <div class="me-4">
+                            <img src="assets/images/member (1).jpg" alt="member1" class="member">
+                            <img src="assets/images/member (2).jpg" alt="member2" class="member">
+                            <img src="assets/images/member (3).jpg" alt="member3" class="member">
+                            <img src="assets/images/member (4).jpg" alt="member4" class="member">
+                        </div>
+                        <div class="me-3">
+                            <h3>4.5</h3>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <p>2,564 reviews</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <div class="container">
+                <div class="row row-cols-lg-2 row-cols-1 gx-5">
+                    <img src="assets/images/tablet-screen-contents.jpg" alt="">
+                    <div class="mt-4">
+                        <h5 class="text-warning">Modern & Creative</h5>
+                        <h2 class="mb-4">About The Book</h2>
+                        <p class="text-black-50">Credit goes to <a href="#" class="text-primary">FreePik</a> for images
+                            used in this ebook landing page template. You may browse
+                            FreePik to download more free images for your website.</p>
+                        <p class="text-black-50">TemplateMo is one of the best websites to download free CSS templates
+                            for any purpose. This
+                            is an ebook landing page template using Bootstrap 5 CSS layout.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="priview">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h5 class="text-warning">What's inside?</h5>
+                    <h2>Preview at glance</h2>
+                </div>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne">
+                                Introduction
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <h5>Introducing ebook</h5>
+                                <p>This ebook landing page is good to use for any purpose. This layout is based on
+                                    Bootstrap 5 CSS framework.</p>
+                                <p><strong>What is Content Marketing?</strong> If you are wondering what content
+                                    marketing is all about, this is the place to start.</p>
+                                <div class="p-4 rounded-4" style="background-color: #F0F8FF;">
+                                    <img class="mx-auto d-block mb-3" src="assets/images/Bootstrap-logo.png" alt=""
+                                        style="width: 60px;">
+                                    <h4>Lorem Ipsum dolor sit amet, consectetur adipsicing kengan omeg kohm tokito</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo">
+                                Chapter1: <strong>Win back your time</strong>
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>Win back your time</strong>
+                                <div class="text-black-50">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua.</p>
+                                    <p>Sed leo nisl, posuere at molestie ac, suscipit auctor mauris. Etiam quis metus
+                                        elementum, tempor risus vel, condimentum orci.</p>
+                                    <p>You are not allowed to redistribute this template ZIP file on any other template
+                                        collection website. Please contact TemplateMo for more information. </p>
+                                    <div class="row row-cols-2 mb-3">
+                                        <img class="rounded-5" src="assets/images/review.jpg" alt="">
+                                        <img class="rounded-5" src="assets/images/welcome-bg.jpg" alt="">
+                                    </div>
+                                    <p>If you need some specific CSS templates, you can Google with keywords such as
+                                        templatemo gallery, templatemo digital marketing, etc.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree">
+                                Chapter2: <strong>Work less, do more</strong>
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>Work less, do more</strong>
+                                <div class="text-black-50">
+                                    <p>Credit goes to FreePik for images used in this ebook landing page template. You
+                                        may browse FreePik to download more free images for your website.</p>
+                                    <p>This is a second paragraph. Lorem ipsum dolor sit amet, consectetur adipisicing
+                                        elit, sed do eiusmod tempor incididunt.</p>
+                                    <p>Lorem ipsum dolor sit amet, consive adipisicing elit, sed do eiusmod. tempor
+                                        incididunt ut labore.</p>
+                                    <div class="row row-cols-2">
+                                        <img src="assets/images/tablet-screen-contents.jpg" alt="">
+                                        <div class="d-flex flex-column justify-content-center">
+                                            <p>Modern ebook ever</p>
+                                            <h5>Lorem ipsum dolor sit amet, consive adipisicing elit, sed do eiusmod.
+                                                tempor incididunt.</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse4">
+                                Chapter3: <strong>Delegate</strong>
+                            </button>
+                        </h2>
+                        <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>Delegate</strong>
+                                <div class="text-black-50">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua.</p>
+                                    <p>Lorem ipsum dolor sit amet, consive adipisicing elit, sed do eiusmod. tempor
+                                        incididunt ut labore.</p>
+                                    <p>You are not allowed to redistribute this template ZIP file on any other template
+                                        collection website. Please contact TemplateMo for more information.</p>
+                                </div>
+                                <img class="rounded-5 w-75" src="assets/images/review.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="reviews">
+            <div class="container">
+                <div class="text-center">
+                    <h4 class="text-warning">Reviews</h4>
+                    <h2 class="mb-5">What people saying...</h2>
+                </div>
+                <div class="row row-cols-1 row-cols-lg-3 g-4">
+                    <div>
+                        <div class="rounded-4 shadow p-4 pt-0 text-white custom-block">
+                            <div class="position-relative z-1 d-flex flex-column">
+                                <div class="peple">
+                                    <img src="assets/images/member (1).jpg" alt="member1" class="member">
+                                    <p>Sandy</p>
+                                    <h5>Artist</h5>
+                                </div>
+                                <div class="me-3 d-flex align-items-center gap-3">
+                                    <h3>4.5</h3>
+                                    <div>
+                                        <i class="text-warning fa-solid fa-star"></i>
+                                        <i class="text-warning fa-solid fa-star"></i>
+                                        <i class="text-warning fa-solid fa-star"></i>
+                                        <i class="text-warning fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut
+                                    labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="rounded-4 shadow p-4 pt-0 text-white custom-block">
+                            <div class="position-relative z-1 d-flex flex-column">
+                                <div class="peple">
+                                    <img src="assets/images/member (3).jpg" alt="member1" class="member">
+                                    <p>Sandy</p>
+                                    <h5>Artist</h5>
+                                </div>
+                                <div class="me-3 d-flex align-items-center gap-3">
+                                    <h3>4.5</h3>
+                                    <div>
+                                        <i class="text-warning fa-solid fa-star"></i>
+                                        <i class="text-warning fa-solid fa-star"></i>
+                                        <i class="text-warning fa-solid fa-star"></i>
+                                        <i class="text-warning fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut
+                                    labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="rounded-4 shadow p-4 pt-0 text-white custom-block">
+                            <div class="position-relative z-1 d-flex flex-column">
+                                <div class="peple">
+                                    <img src="assets/images/member (2).jpg" alt="member1" class="member">
+                                    <p>Sandy</p>
+                                    <h5>Artist</h5>
+                                </div>
+                                <div class="me-3 d-flex align-items-center gap-3">
+                                    <h3>4.5</h3>
+                                    <div>
+                                        <i class="text-warning fa-solid fa-star"></i>
+                                        <i class="text-warning fa-solid fa-star"></i>
+                                        <i class="text-warning fa-solid fa-star"></i>
+                                        <i class="text-warning fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut
+                                    labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="contact position-relative">
+                <div class="container">
+                    <div class="row row-cols-1 row-cols-lg-2 g-5">
+                        <div>
+                            <form class="shadow-lg bg-white rounded-4 px-4 py-5">
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp">
+                                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputPassword1" class="form-label">Your@company.com</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1">
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                        </div>
+                        <div>
+                            <h4 class="text-warning">Say hi and talk to us</h4>
+                            <h2 class="mb-4">Contact</h2>
+                            <div class="text-white">
+                                <h3>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    London, United Kingdom <br>010-020-0340
+                                </h3>
+                                <a class="fs-3 mt-3" href="#">info@company.com</a>
+                                <div class="fs-3 mt-3">
+                                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                                </div>
+                                <p class="text-black-50">Copyright © 2048 ebook company</p>
+                                <p class="text-warnin">designed by =><a href="https://templatemo.com/templates/templatemo_588_ebook_landing/"> templatemo</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="container">
+        <p class="p-1 text-black-50 m-0 text-center">Tiến học Bootstrap</p>
+    </footer>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+</body>
+
+</html>
